@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Abenteuer in NEW YORK®</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
+    <!--Javascript um mit dem Burgerbutton das Klappmenu zu öffnen-->
+    <script>
+      function burgermenu() {
+        var x = document.getElementById("Links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!--Navigation mit Logo (DESKTOP)-->
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html">NEW YORK</a>
+      </div>
+      <div class="undernav">
+        <a href="brooklynbridge.html">BROOKLYN BRIDGE</a>
+        <a href="abenteuer.html">ABENTEUER IN NEW YORK</a>
+        <a href="ueber-mich.html">ÜBER MICH</a>
+        <a href="fotos.html">FOTOS</a>
+      </div>
+    </div>
+    <!--Ende der Navigation-->
+    <!--Navigation mit Logo (MOBILE)-->
+    <div class="mobile-nav">
+      <div class="burger-button-container" onclick="burgermenu(this)">
+        <div class="balken"></div>
+        <div class="balken"></div>
+        <div class="balken"></div>
+      </div>
+      <!-- Klappmenü -->
+      <div class="klappmenu">
+        <div id="Links">
+          <a href="brooklynbridge.html">BROOKLYN BRIDGE</a>
+          <a href="abenteuer.html">ABENTEUER IN NEW YORK</a>
+          <a href="ueber-mich.html">ÜBER MICH</a>
+        <a href="fotos.html">FOTOS</a>
+        </div>
+      </div>
+      <div class="mobile-logo">
+        <a href="index.html">NEW YORK</a>
+      </div>
+    </div>
+    <!--Ende der Navigation-->
+
+    <div class="container-bb mobile-container">
+      <div class="img-bb">
+        <img src="./img/bb.jpeg" alt="" />
+      </div>
+      <div class="text-bb mobile-txt">
+        <h1>Brooklyn Bridge</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Obcaecati, harum eum enim adipisci debitis ad, sapiente, cum
+          at magnam alias commodi dolores. Deleniti tempore deserunt
+          cupiditate voluptatum! Aspernatur, hic maxime? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Fugit fuga,
+          assumenda rem quos voluptates facere ad at aliquam ipsa
+          voluptatibus veniam consectetur rerum iusto dolor eveniet
+          iure vero! Temporibus, dolor.Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Obcaecati, harum eum enim
+          adipisci debitis ad, sapiente, cum at magnam alias commodi
+          dolores.
+        </p>
+      </div>
+    </div>
+    <div class="container-bb2 mobile-container">
+      <div class="text-bb2 mobile-txt">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Obcaecati, harum eum enim adipisci debitis ad, sapiente, cum
+          at magnam alias commodi dolores. Deleniti tempore deserunt
+          cupiditate voluptatum! Aspernatur, hic maxime? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Fugit fuga,
+          assumenda rem quos voluptates facere ad at aliquam ipsa
+          voluptatibus veniam consectetur rerum iusto dolor eveniet
+          iure vero! Temporibus, dolor.Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Obcaecati, harum eum enim
+          adipisci debitis ad, sapiente, cum at magnam alias commodi
+          dolores.
+        </p>
+      </div>
+      <div class="text-bb2 mobile-txt">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Obcaecati, harum eum enim adipisci debitis ad, sapiente, cum
+          at magnam alias commodi dolores. Deleniti tempore deserunt
+          cupiditate voluptatum! Aspernatur, hic maxime? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Fugit fuga,
+          assumenda rem quos voluptates facere ad at aliquam ipsa
+          voluptatibus veniam consectetur rerum iusto dolor eveniet
+          iure vero! Temporibus, dolor.Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Obcaecati, harum eum enim
+          adipisci debitis ad, sapiente, cum at magnam alias commodi
+          dolores.
+        </p>
+      </div>
+    </div>
+    <div class="bb-fotos">
+      <img src="./img/bb-2.jpg" alt="">
+      <img src="./img/bb-3.jpg" alt="">
+      <img src="./img/bb-4.jpg" alt="">
+    </div>
+  <footer  class="footer">
+      <ul>
+        <li class="footer-title">Impressum ®<li>  
+        <li>Name: Raminth Yogeswaran</li>
+        <li>Telefonummer +41798141963</li>
+      </ul>
+      <ul>
+        <li>Fax: 031 971 23 45 </li>
+        <li>E-Mail Adresse: raminth@test.com</li>
+        <li>Adresse: Musterstr.01 3008 Bern CH</li>
+      </ul>    
+    </footer>
+  </body>
+</html>

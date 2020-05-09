@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Abenteuer in NEW YORK®</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
+    <!--Javascript Burgerbutton das Klappmenu zu öffnen-->
+    <script>
+      function burgermenu() {
+        var x = document.getElementById("Links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body class="background1">
+    <!--Navigation mit Logo (DESKTOP)-->
+    <div class="nav1">
+      <div class="logo">
+        <a href="index.html">NEW YORK</a>
+      </div>
+      <div class="undernav">
+        <a href="brooklynbridge.html">BROOKLYN BRIDGE</a>
+        <a href="abenteuer.html">ABENTEUER IN NEW YORK</a>
+        <a href="ueber-mich.html">ÜBER MICH</a>
+        <a href="fotos.html">FOTOS</a>
+      </div>
+    </div>
+    <!--Ende der Navigation-->
+    <!--Navigation mit Logo (MOBILE)-->
+    <div class="mobile-nav">
+      <div class="burger-button-container" onclick="burgermenu(this)">
+        <div class="balken"></div>
+        <div class="balken"></div>
+        <div class="balken"></div>
+      </div>
+      <!-- Klappmenü -->
+      <div class="klappmenu">
+        <div id="Links">
+          <a href="brooklynbridge.html">BROOKLYN BRIDGE</a>
+          <a href="abenteuer.html">ABENTEUER IN NEW YORK</a>
+          <a href="ueber-mich.html">ÜBER MICH</a>
+        <a href="fotos.html">FOTOS</a>
+        </div>
+      </div>
+      <div class="mobile-logo">
+        <a href="index.html">NEW YORK</a>
+      </div>
+    </div>
+    <!--Ende der Navigation-->
+    </body>
+</html>

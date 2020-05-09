@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Abenteuer in NEW YORK®</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
+    <!--Javascript um mit dem Burgerbutton das Klappmenu zu öffnen-->
+    <script>
+      function burgermenu() {
+        var x = document.getElementById("Links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!--Navigation mit Logo (DESKTOP)-->
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html">NEW YORK</a>
+      </div>
+      <div class="undernav">
+        <a href="brooklynbridge.html">BROOKLYN BRIDGE</a>
+        <a href="abenteuer.html">ABENTEUER IN NEW YORK</a>
+        <a href="ueber-mich.html">ÜBER MICH</a>
+        <a href="fotos.html">FOTOS</a>
+      </div>
+    </div>
+    <!--Ende der Navigation-->
+    <!--Navigation mit Logo (MOBILE)-->
+    <div class="mobile-nav">
+      <div class="burger-button-container" onclick="burgermenu(this)">
+        <div class="balken"></div>
+        <div class="balken"></div>
+        <div class="balken"></div>
+      </div>
+      <!-- Klappmenü -->
+      <div class="klappmenu">
+        <div id="Links">
+          <a href="brooklynbridge.html">BROOKLYN BRIDGE</a>
+          <a href="abenteuer.html">ABENTEUER IN NEW YORK</a>
+          <a href="ueber-mich.html">ÜBER MICH</a>
+          <a href="fotos.html">FOTOS</a>
+        </div>
+      </div>
+      <div class="mobile-logo">
+        <a href="index.html">NEW YORK</a>
+      </div>
+    </div>
+    <!--Ende der Navigation-->
+
+    <div class="ab-container1">
+      <div class="foto1 b">
+        <img src="./img/ab-1.jpg" alt="" />
+      </div>
+      <div class="ab-text1 mobile-order1">
+        <h1>Abenteuer in New York</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Suscipit nihil quos praesentium tenetur, omnis corrupti,
+          repellat dolores reiciendis similique facilis quisquam dolor
+          quo ab! Saepe sapiente pariatur similique accusantium
+          eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Repellat iste amet animi blanditiis voluptate, vero
+          aspernatur ad, earum pariatur, nobis recusandae hic possimus
+          sapiente harum. Similique obcaecati et accusantium velit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Amet id porro velit sed sit reiciendis veniam corrupti
+          facere ad sunt soluta alias, temporibus corporis ea ipsam
+          illo atque, modi error.
+        </p>
+      </div>
+    </div>
+    <div class="ab-container1">
+      <div class="ab-text1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Suscipit nihil quos praesentium tenetur, omnis corrupti,
+          repellat dolores reiciendis similique facilis quisquam dolor
+          quo ab! Saepe sapiente pariatur similique accusantium
+          eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Repellat iste amet animi blanditiis voluptate, vero
+          aspernatur ad, earum pariatur, nobis recusandae hic possimus
+          sapiente harum. Similique obcaecati et accusantium velit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Amet id porro velit sed sit reiciendis veniam corrupti
+          facere ad sunt soluta alias, temporibus corporis ea ipsam
+          illo atque, modi error.
+        </p>
+      </div>
+      <div class="foto1 mobile-margin">
+        <img src="./img/ab-2.jpeg" alt="" />
+      </div>
+    </div>
+
+    <div class="aben-fotos">
+      <div class="ab-container1">
+        <div class="foto2 a mobile-order2 mobile-margin">
+          <img src="./img/ab-3.jpeg" alt="" />
+        </div>
+        <div class="foto2 a mobile-order2 mobile-margin">
+          <img src="./img/ab-4.jpg" alt="" />
+        </div>
+        <div class="foto2 a mobile-order2 mobile-margin">
+          <img src="./img/ab-5.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <ul>
+        <li class="footer-title">Impressum ®</li>
+        <li></li>
+        <li>Name: Raminth Yogeswaran</li>
+        <li>Telefonummer +41798141963</li>
+      </ul>
+      <ul>
+        <li>Fax: 031 971 23 45</li>
+        <li>E-Mail Adresse: raminth@test.com</li>
+        <li>Adresse: Musterstr.01 3008 Bern CH</li>
+      </ul>
+    </footer>
+  </body>
+</html>

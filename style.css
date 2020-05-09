@@ -1,0 +1,256 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.527);
+}
+
+/*Logo ("New York")*/
+.logo a {
+  font-size: 40pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 118px;
+}
+.logo a:hover {
+  color: rgb(30, 144, 255);
+  transition: ease-in-out 0.2s;
+}
+
+/*Navigation unter dem Logo*/
+.undernav a {
+  text-decoration: none;
+  font-size: 25pt;
+  transition: ease-in-out 0.2s;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.undernav a:hover {
+  color: rgb(30, 144, 255);
+  font-size: 24pt;
+}
+.undernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px 0px 10px 0px;
+}
+.nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: solid rgba(0, 0, 0, 0.5) 1px;
+  background-image: url(./img/nav.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nav1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: solid rgba(0, 0, 0, 0.5) 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.nav a {
+  font-weight: 1000;
+  text-decoration: none;
+  font-family: "Segoe UI";
+  color: rgb(255, 255, 255);
+}
+.nav1 a {
+  font-weight: 1000;
+  text-decoration: none;
+  font-family: "Segoe UI";
+  color: rgb(0, 0, 0);
+}
+
+/*-----Hintergrundbilder-----*/
+
+/*INDEX.html/HOME*/
+.background1 {
+  background-image: url(./img/1.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*BrocoklynBridge.html*/
+.background-bb {
+  background-image: url(./img/2.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*ÜberMich.html*/
+.background-ue {
+  background-image: url(./img/3.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*Abenteuer.html*/
+.background-ab {
+  background-image: url(./img/4.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*-------------------------
+EINZELNE SEITEN
+---------------------------*/
+/*Brooklyn Bridge*/
+.container-bb,
+.container-bb2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+.container-bb2 {
+  margin-bottom: 5%;
+}
+.text-bb {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 40px;
+  width: 40vw;
+  font-size: 18pt;
+}
+.img-bb img {
+  width: 40vw;
+}
+.text-bb2 {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 40px;
+  width: 40vw;
+  font-size: 18pt;
+}
+.bb-fotos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bb-fotos img {
+  height: 70vh;
+}
+
+/*Über mich*/
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 86px;
+}
+.about-img img {
+  border: solid 0px;
+}
+.about-text p {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.748);
+  font-size: 1.4vw;
+  font-weight: 300;
+}
+.about-text {
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 4vh;
+  border: solid 0px;
+}
+
+.about-img img {
+  width: 40vw;
+}
+.about-pics {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-pics img {
+  height: 70vh;
+}
+
+/*Abenteuer in New York*/
+.ab-container1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foto1 img {
+  width: 30vw;
+}
+.ab-text1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.74);
+  font-size: 1.4vw;
+  font-weight: 300;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 4vh;
+}
+.aben-fotos {
+  margin-top: 4%;
+}
+.foto2 img {
+  height: 60vh;
+}
+.a {
+  margin-bottom: 20px;
+}
+.b {
+  margin-top: 20px;
+}
+/*Fotos*/
+.fotos-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fotos-container img {
+  width: 70vw;
+  margin-top: 5%;
+}
+.fotos-text-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fotos-text {
+  width: 70vw;
+  background-color: rgba(102, 102, 102, 0.685);
+  padding: 2%;
+}
+.fotos-text p {
+  font-size: 18pt;
+}
+/*Footer Impressum*/
+.footer {
+  background-color: black;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+.footer-title {
+  font-weight: bold;
+}
+.footer ul {
+  display: inline-block;
+}
+.footer ul li {
+  text-decoration: none;
+  list-style-type: none;
+}

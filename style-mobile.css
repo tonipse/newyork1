@@ -1,0 +1,185 @@
+/*----------------------------------
+Mobile Navigation (für das Handys)
+------------------------------------*/
+.mobile-nav {
+  display: none;
+}
+/*Mit @media only screen and (max-width: 900px) wird festgelegt,
+was passiert wenn der Bildschirm schmaler als 900px ist. 
+hier: burgermenu erscheint
+*/
+@media only screen and (max-width: 1100px) {
+  .nav {
+    display: none;
+  }
+  .nav1 {
+    display: none;
+  }
+  .mobile-nav {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    float: left;
+  }
+  .mobile-logo {
+    margin-top: 0px;
+    z-index: -1;
+    position: absolute;
+    left: 30px;
+    width: 270px;
+  }
+  .mobile-logo a {
+    font-size: 30pt;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;;
+    position: relative;
+    margin-left: 10%;
+  }
+  .mobile-logo a:hover {
+    color: rgb(189, 189, 189);
+    transition: ease-in-out 0.2s;
+  }
+
+  /*BURGERMENÜ ICON*/
+  .burger-button-container {
+    display: inline-block;
+    cursor: pointer;
+
+  }
+  .balken {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(51, 51, 51);
+    margin: 6px 0;
+  }
+  /*Burgermenü*/
+  .klappmenu {
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    margin-top: 10px;
+    border: solid 0px black;
+    border-radius: 20px;
+  }
+
+  .klappmenu #Links {
+    display: none;
+  }
+
+  .klappmenu a {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .klappmenu a:hover {
+    color: rgb(30, 144, 255);
+  }
+}
+/*Mobil respinsive für abenteuer in ny*/
+@media only screen and (max-width: 1100px) {
+  .ab-container1 {
+    flex-direction: column;
+  }
+  .foto1 img {
+    width: 100vw;
+  }
+  .foto2 img {
+    width: 100vw;
+    height: unset;
+  }
+  .ab-text1 {
+    margin-top: 5vh;
+    font-size: 18pt;
+    padding: 15px;
+    width: 92vw;
+
+    margin-top: 10vh;
+  }
+  .mobile-order1 {
+    order: -1;
+  }
+  .mobile-order2 {
+    order: 100;
+  }
+  .mobile-margin {
+    margin-top: 5vh;
+  }
+  
+}
+/*Mobil respinsive für über mich*/
+@media only screen and (max-width: 1100px) {
+  .about-container, .about-pics {
+    flex-direction: column;
+  }
+
+  .about-text p {
+    font-size: 18pt;
+  }
+  .about-text {
+    width: 92vw;
+    padding: 15px;
+    margin-top: 5vh;
+    z-index: -1;
+  }
+  .about-text {
+    height: 100%;
+  }
+  .about-img img,  .about-pics img{
+    margin-top: 10%;
+    width: 100vw;
+    height: unset;
+  }
+  .impressum {
+    width: 95vw;
+    padding: 15px;
+    margin-left: 2.5vw;
+    margin-top: 30px;
+  }
+  .impressum li {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+/*Mobil respinsive für brooklyn-bridge*/
+@media only screen and (max-width: 1100px) {
+  .mobile-container {
+    flex-direction: column;
+  }
+  .mobile-txt {
+    width: 79vw;
+    margin-top: 5%;
+  }
+  .img-bb img {
+    width: 100vw;
+    margin-top: 15%;
+  }
+}
+/*Mobil respinsive für fotos*/
+@media only screen and (max-width: 1100px){
+  .fotos-text-container{
+    flex-direction: column;
+  }
+  .fotos-text{
+    width: 95vw;
+    margin-top: 60px;
+  }
+  .fotos-container{
+    flex-direction: column;
+  }
+  .fotos-container img{
+    width: 100vw;
+  }
+  .bb-fotos{
+    flex-direction: column;
+  }
+  .bb-fotos img{
+    width: 100vw;
+    height: unset;
+    margin-top: 100px;
+  }
+}
